@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products — Olive Furniture Hub | Custom Furniture Collections</title>
+    <meta name="description" content="Explore our full furniture collections — Living Room, Bedroom, Dining, Kitchen, Bathroom, Hall, Outdoor, and Office. Every piece customizable." />
+
+    <!-- Google Fonts: Fraunces + Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ HEADER / NAVBAR ============ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-mark" aria-hidden="true">
+                    <svg class="logo-svg" viewBox="0 20 250 115" xmlns="http://www.w3.org/2000/svg">
+                        <text x="110" y="105" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="600" letter-spacing="0" fill="#626B6D">Olive</text>
+                        <path d="M110 38 C118 25, 130 25, 137 32 C128 42, 118 44, 110 38Z" fill="#7C9670"/>
+                        <path d="M103 48 C97 39, 89 39, 85 44 C91 51, 98 52, 103 48Z" fill="#7C9670" />
+                        <text x="150" y="135" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="600" letter-spacing="1" fill="#626B6D">Furniture</text>
+                    </svg>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="products.html" class="nav-link" style="color: var(--olive);">Products</a></li>
+                    <li><a href="index.html#customize" class="nav-link">Customize</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="index.html#customize" class="btn btn-primary btn-small">Enquire Now</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ PRODUCTS HERO ============ -->
+        <section class="hero" id="top" style="padding: clamp(40px, 8vw, 80px) 0 60px;">
+            <div class="hero-bg" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=1600&h=800&fit=crop" alt="" class="hero-bg-img">
+            </div>
+            <div class="container hero-inner" style="grid-template-columns: 1fr;">
+                <div class="hero-copy" style="text-align:center;">
+                    <p class="hero-eyebrow" data-reveal-item>Explore our full range</p>
+                    <h1 class="hero-title" style="font-size: clamp(2.2rem, 4vw, 3.4rem);">
+                        <span data-reveal-item>Every room,</span>
+                        <span data-reveal-item><em>every style.</em></span>
+                    </h1>
+                    <p class="hero-sub" data-reveal-item style="margin:0 auto;">Browse our collections below. Every piece can be customized to your exact specifications — wood, finish, fabric, and size.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ QUICK NAV ============ -->
+        <section style="background: var(--cream-alt); padding: 24px 0; border-bottom: 1px solid var(--line);">
+            <div class="container" style="display:flex; flex-wrap:wrap; justify-content:center; gap: 12px 28px;">
+                <a href="#living-room" class="btn btn-text" style="font-size:0.9rem;">Living Room</a>
+                <a href="#bedroom" class="btn btn-text" style="font-size:0.9rem;">Bedroom</a>
+                <a href="#dining" class="btn btn-text" style="font-size:0.9rem;">Dining</a>
+                <a href="#kitchen" class="btn btn-text" style="font-size:0.9rem;">Kitchen</a>
+                <a href="#bathroom" class="btn btn-text" style="font-size:0.9rem;">Bathroom</a>
+                <a href="#hall" class="btn btn-text" style="font-size:0.9rem;">Hall / Entry</a>
+                <a href="#outdoor" class="btn btn-text" style="font-size:0.9rem;">Outdoor</a>
+                <a href="#office" class="btn btn-text" style="font-size:0.9rem;">Office</a>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- LIVING ROOM -->
+        <!-- ============================================================ -->
+        <section class="products" id="living-room" style="padding-top: 60px;">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>🛋 Living Room</h2>
+                    <p>Sofas, recliners, TV units, coffee tables — built around how your family actually uses the room.</p>
+                </div>
+                <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=640&h=480&fit=crop" alt="Custom 3-seater sofa" loading="lazy"></div>
+                        <div class="product-body"><h3>3-Seater Sofa</h3><p>Deep seating, solid wood frame, choose your fabric and finish.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=640&h=480&fit=crop" alt="Custom TV unit" loading="lazy"></div>
+                        <div class="product-body"><h3>TV Unit / Media Console</h3><p>Designed to fit your TV size and storage needs — open shelves or closed cabinets.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdb?w=640&h=480&fit=crop" alt="Coffee table" loading="lazy"></div>
+                        <div class="product-body"><h3>Coffee Table</h3><p>Round, rectangular or square — with or without storage. Your choice of wood.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=640&h=480&fit=crop" alt="Recliner chair" loading="lazy"></div>
+                        <div class="product-body"><h3>Recliner / Armchair</h3><p>Single or double-seater, manual or power recliner. Upholstered in your fabric.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1594013305943-d576b3d23dac?w=640&h=480&fit=crop" alt="Side table" loading="lazy"></div>
+                        <div class="product-body"><h3>Side Table / End Table</h3><p>Compact and elegant — pairs perfectly with sofas and armchairs.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=640&h=480&fit=crop" alt="Bookshelf" loading="lazy"></div>
+                        <div class="product-body"><h3>Bookshelf / Display Unit</h3><p>Open shelving with adjustable height — show off your collection.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BEDROOM -->
+        <!-- ============================================================ -->
+        <section class="products" id="bedroom" style="background: var(--cream); padding-top: 60px;">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>🛏 Bedroom</h2>
+                    <p>Beds, wardrobes, dressers, and nightstands — crafted to make your bedroom your sanctuary.</p>
+                </div>
+                <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=640&h=480&fit=crop" alt="Custom bed frame" loading="lazy"></div>
+                        <div class="product-body"><h3>Bed Frame</h3><p>Queen, king, or super-king. With or without storage drawers underneath.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1597006335772-bf541ec5b97b?w=640&h=480&fit=crop" alt="Custom wardrobe" loading="lazy"></div>
+                        <div class="product-body"><h3>Wardrobe / Closet</h3><p>Sliding or hinged doors, internal shelves, hanging rods, and drawers — all custom.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=640&h=480&fit=crop" alt="Dresser" loading="lazy"></div>
+                        <div class="product-body"><h3>Dresser / Chest of Drawers</h3><p>Multiple configurations — 3, 4, 5, or 6 drawers. With or without a mirror.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1551298370-9d3d53740c72?w=640&h=480&fit=crop" alt="Nightstand" loading="lazy"></div>
+                        <div class="product-body"><h3>Nightstand / Bedside Table</h3><p>Single or double-drawer, with a shelf for books and a reading lamp.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1617127365659-c47b8648a53a?w=640&h=480&fit=crop" alt="Vanity unit" loading="lazy"></div>
+                        <div class="product-body"><h3>Vanity / Dressing Table</h3><p>With mirror and stool — choose your drawer layout and finish.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1565795326481-a50f473ab11f?w=640&h=480&fit=crop" alt="Bedroom bench" loading="lazy"></div>
+                        <div class="product-body"><h3>Bedroom Bench / Ottoman</h3><p>Place at the foot of your bed — upholstered or wooden top.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- DINING -->
+        <!-- ============================================================ -->
+        <section class="products" id="dining" style="background: var(--cream-alt); padding-top: 60px;">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>🍽 Dining</h2>
+                    <p>Dining tables, chairs, sideboards — sized to your dining area, from 4-seaters to 10-seaters.</p>
+                </div>
+                <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1615066390961-5bdc7f34caa3?w=640&h=480&fit=crop" alt="Dining table" loading="lazy"></div>
+                        <div class="product-body"><h3>Dining Table</h3><p>Round, rectangular, or extendable. Seats 4 to 10 — your choice.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=640&h=480&fit=crop" alt="Dining chairs" loading="lazy"></div>
+                        <div class="product-body"><h3>Dining Chairs</h3><p>With or without armrests, upholstered or wooden seat. Order in sets.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=640&h=480&fit=crop" alt="Sideboard" loading="lazy"></div>
+                        <div class="product-body"><h3>Sideboard / Buffet</h3><p>Storage for dinnerware and cutlery — with drawers and cabinets.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1595515106953-3c2a45f2fd8d?w=640&h=480&fit=crop" alt="Dining bench" loading="lazy"></div>
+                        <div class="product-body"><h3>Dining Bench</h3><p>Space-saving alternative to chairs — fits under the table when not in use.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=640&h=480&fit=crop" alt="Bar cabinet" loading="lazy"></div>
+                        <div class="product-body"><h3>Bar / Drinks Cabinet</h3><p>With glass holders, bottle storage, and a fold-down serving surface.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1598884637260-e66da24c0b53?w=640&h=480&fit=crop" alt="Serving trolley" loading="lazy"></div>
+                        <div class="product-body"><h3>Serving Trolley</h3><p>Portable and elegant — perfect for dining and hosting.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- KITCHEN -->
+        <!-- ============================================================ -->
+        <section class="products" id="kitchen" style="background: var(--cream); padding-top: 60px;">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>🍳 Kitchen</h2>
+                    <p>Modular and custom kitchen cabinetry — islands, pantries, breakfast bars, and storage units.</p>
+                </div>
+                <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=640&h=480&fit=crop" alt="Kitchen cabinets" loading="lazy"></div>
+                        <div class="product-body"><h3>Modular Cabinets</h3><p>Upper and lower cabinets — choose your finish, handle style, and internal layout.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1556909213-62c1a8aa49e7?w=640&h=480&fit=crop" alt="Kitchen island" loading="lazy"></div>
+                        <div class="product-body"><h3>Kitchen Island</h3><p>With or without a sink, storage underneath, and breakfast bar overhang.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1556909212-6d3a9c4f3e8b?w=640&h=480&fit=crop" alt="Pantry unit" loading="lazy"></div>
+                        <div class="product-body"><h3>Pantry / Tall Storage</h3><p>Pull-out shelves, spice racks, and deep storage — custom built.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=640&h=480&fit=crop" alt="Breakfast bar" loading="lazy"></div>
+                        <div class="product-body"><h3>Breakfast Bar / Counter</h3><p>Attached to your island or wall — with bar stools if needed.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?w=640&h=480&fit=crop" alt="Open shelving" loading="lazy"></div>
+                        <div class="product-body"><h3>Open Shelving</h3><p>Display your cookbooks, crockery, and plants — warm and inviting.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1584567030228-9c4b5a3b7e5b?w=640&h=480&fit=crop" alt="Wine rack" loading="lazy"></div>
+                        <div class="product-body"><h3>Wine / Bottle Rack</h3><p>Integrated or freestanding — holds your favorite bottles in style.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- BATHROOM -->
+        <!-- ============================================================ -->
+        <section class="products" id="bathroom" style="background: var(--cream-alt); padding-top: 60px;">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>🛁 Bathroom</h2>
+                    <p>Vanities, storage cabinets, mirror units — designed for moisture resistance and everyday use.</p>
+                </div>
+                <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=640&h=480&fit=crop" alt="Bathroom vanity" loading="lazy"></div>
+                        <div class="product-body"><h3>Vanity Unit</h3><p>With countertop, sink, and storage underneath — choose your wood and finish.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=640&h=480&fit=crop" alt="Bathroom cabinet" loading="lazy"></div>
+                        <div class="product-body"><h3>Storage Cabinet</h3><p>Tall or wall-mounted — keep towels, toiletries, and essentials organized.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1615873968403-89e0686298ab?w=640&h=480&fit=crop" alt="Mirror cabinet" loading="lazy"></div>
+                        <div class="product-body"><h3>Mirror Cabinet</h3><p>Medicine cabinet with a mirrored front — internal shelves for storage.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1620089823318-15c4e6b5b5b5?w=640&h=480&fit=crop" alt="Towel rack" loading="lazy"></div>
+                        <div class="product-body"><h3>Towel Rack / Ladder</h3><p>Freestanding or wall-mounted — warm wood adds a spa-like feel.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e?w=640&h=480&fit=crop" alt="Bathroom stool" loading="lazy"></div>
+                        <div class="product-body"><h3>Bathroom Stool / Step</h3><p>Compact and sturdy — for children or as a plant stand.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=640&h=480&fit=crop" alt="Wall shelf" loading="lazy"></div>
+                        <div class="product-body"><h3>Wall Shelf</h3><p>Floating shelves for plants, candles, and bathroom accessories.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- HALL / ENTRY -->
+        <!-- ============================================================ -->
+        <section class="products" id="hall" style="background: var(--cream); padding-top: 60px;">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>🚪 Hall / Entryway</h2>
+                    <p>Consoles, shoe racks, coat hangers, and benches — first impressions matter.</p>
+                </div>
+                <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=640&h=480&fit=crop" alt="Console table" loading="lazy"></div>
+                        <div class="product-body"><h3>Console Table</h3><p>Narrow and elegant — with or without drawers. Perfect for keys and decor.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1551298370-9d3d53740c72?w=640&h=480&fit=crop" alt="Shoe rack" loading="lazy"></div>
+                        <div class="product-body"><h3>Shoe Rack / Stand</h3><p>Multi-tiered with a bench top — keep your entryway tidy.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=640&h=480&fit=crop" alt="Coat rack" loading="lazy"></div>
+                        <div class="product-body"><h3>Coat / Hat Rack</h3><p>Freestanding or wall-mounted — with hooks and a storage shelf.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1565795326481-a50f473ab11f?w=640&h=480&fit=crop" alt="Entry bench" loading="lazy"></div>
+                        <div class="product-body"><h3>Entryway Bench</h3><p>With storage underneath — sit and remove your shoes in comfort.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1615873968403-89e0686298ab?w=640&h=480&fit=crop" alt="Hall mirror" loading="lazy"></div>
+                        <div class="product-body"><h3>Full-Length Mirror</h3><p>Wood-framed — floor-standing or wall-mounted.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1594013305943-d576b3d23dac?w=640&h=480&fit=crop" alt="Umbrella stand" loading="lazy"></div>
+                        <div class="product-body"><h3>Umbrella Stand</h3><p>Simple and functional — keeps rainy days organized.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- OUTDOOR -->
+        <!-- ============================================================ -->
+        <section class="products" id="outdoor" style="background: var(--cream-alt); padding-top: 60px;">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>🌿 Outdoor</h2>
+                    <p>Weather-treated seating, dining sets, and planters — for balconies, gardens, and terraces.</p>
+                </div>
+                <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=640&h=480&fit=crop" alt="Outdoor sofa" loading="lazy"></div>
+                        <div class="product-body"><h3>Outdoor Seating Set</h3><p>Sofa, armchairs, and coffee table — weather-resistant wood and fabrics.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1574701148213-12bf4d7a8a3f?w=640&h=480&fit=crop" alt="Outdoor dining" loading="lazy"></div>
+                        <div class="product-body"><h3>Outdoor Dining Set</h3><p>Table and chairs — treated for sun and rain resistance.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e?w=640&h=480&fit=crop" alt="Garden bench" loading="lazy"></div>
+                        <div class="product-body"><h3>Garden Bench</h3><p>Classic slatted design — with or without a backrest.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1584567030228-9c4b5a3b7e5b?w=640&h=480&fit=crop" alt="Planter" loading="lazy"></div>
+                        <div class="product-body"><h3>Planter / Flower Box</h3><p>Rectangular or square — for plants, herbs, and flowers.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=640&h=480&fit=crop" alt="Lounge chair" loading="lazy"></div>
+                        <div class="product-body"><h3>Lounge / Sun Chair</h3><p>Adjustable backrest — perfect for reading and relaxing outdoors.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1594013305943-d576b3d23dac?w=640&h=480&fit=crop" alt="Side table outdoor" loading="lazy"></div>
+                        <div class="product-body"><h3>Outdoor Side Table</h3><p>Compact and sturdy — pairs with lounge chairs or sofas.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- OFFICE -->
+        <!-- ============================================================ -->
+        <section class="products" id="office" style="background: var(--cream); padding-top: 60px;">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>💼 Office</h2>
+                    <p>Desks, storage, and workstations — for home offices and commercial spaces.</p>
+                </div>
+                <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=640&h=480&fit=crop" alt="Office desk" loading="lazy"></div>
+                        <div class="product-body"><h3>Office Desk</h3><p>L-shaped, straight, or standing — with cable management and storage.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=640&h=480&fit=crop" alt="Office chair" loading="lazy"></div>
+                        <div class="product-body"><h3>Office Chair</h3><p>Ergonomic design — upholstered in your choice of fabric.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=640&h=480&fit=crop" alt="Office storage" loading="lazy"></div>
+                        <div class="product-body"><h3>Storage / Filing Cabinet</h3><p>Drawers for files and stationery — lockable options available.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=640&h=480&fit=crop" alt="Office bookshelf" loading="lazy"></div>
+                        <div class="product-body"><h3>Bookshelf / Display</h3><p>Open shelving for books, awards, and office decor.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=640&h=480&fit=crop" alt="Meeting table" loading="lazy"></div>
+                        <div class="product-body"><h3>Meeting / Conference Table</h3><p>Large surface with cable ports — for team collaboration.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                    <article class="product-card" data-reveal>
+                        <div class="product-media"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=640&h=480&fit=crop" alt="Credenza" loading="lazy"></div>
+                        <div class="product-body"><h3>Credenza / Sideboard</h3><p>Storage for office supplies — with a sleek, professional look.</p><a href="index.html#customize" class="btn btn-text">Customize →</a></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA SECTION ============ -->
+        <section style="background: var(--walnut-dark); color: var(--text-on-dark); padding: 60px 0; text-align:center;">
+            <div class="container" data-reveal>
+                <h2 style="color: var(--text-on-dark);">See something you like?</h2>
+                <p style="color: rgba(243,236,223,0.8); max-width: 60ch; margin: 0 auto 28px;">Every product on this page can be fully customized — wood, finish, fabric, and dimensions. Tell us your vision and we'll bring it to life.</p>
+                <a href="index.html#customize" class="btn btn-primary" style="font-size:1.05rem; padding: 16px 40px;">Start Your Custom Order →</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo logo-footer">
+                    <span class="logo-mark" aria-hidden="true">
+                        <svg viewBox="0 0 40 40" width="30" height="30"><path d="M8 30 Q8 14 20 14 Q32 14 32 30" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M8 30 V33 M32 30 V33" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="20" cy="10" r="3.4" fill="currentColor"/></svg>
+                    </span>
+                    <span class="logo-text">Olive Furniture Hub</span>
+                </a>
+                <p>Custom-made furniture, designed and built in Nanded — your wood, your finish, your size.</p>
+                <div class="social-row">
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M15 8.5h2.5V5h-2.5A4.5 4.5 0 0 0 10.5 9.5V12H8v3.5h2.5V22H14v-6.5h2.7l.5-3.5H14V9.7c0-.9.4-1.2 1-1.2Z" fill="currentColor"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="30" height="30"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+                    <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 8.7c.3-.7 1-1.3 1.7-1.1.4.1.9 1.4 1.1 1.9.1.3 0 .6-.2.8l-.5.6c.4.9 1.4 1.9 2.3 2.3l.6-.5c.2-.2.5-.3.8-.2.5.2 1.8.7 1.9 1.1.2.7-.4 1.4-1.1 1.7-1.1.5-2.6-.1-4.2-1.7-1.6-1.6-2.2-3.1-1.7-4.2Z" fill="currentColor"/></svg></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html#customize">Customize</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#living-room">Living Room</a></li>
+                    <li><a href="#bedroom">Bedroom</a></li>
+                    <li><a href="#dining">Dining</a></li>
+                    <li><a href="#kitchen">Kitchen</a></li>
+                    <li><a href="#outdoor">Outdoor</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Workshop</h4>
+                <p>Plot No. 12, MIDC Industrial Area,<br>Nanded, Maharashtra 431603</p>
+                <p><a href="tel:+919881415152">+91 9881415152</a></p>
+                <p><a href="mailto:olivefurniturenanded@gmail.com">olivefurniturenanded@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Olive Furniture Hub. All rights reserved. Designed and crafted in Nanded.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating quick-contact button -->
+    <a href="https://wa.me/919881415152" class="float-whatsapp" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z" fill="currentColor"/><path d="M8.7 7.4c.3-.7 1.1-1.5 1.9-1.2.5.1 1 1.6 1.2 2.1.1.4 0 .7-.2.9l-.6.7c.5 1 1.6 2.1 2.6 2.6l.7-.6c.2-.2.5-.3.9-.2.5.2 2 .7 2.1 1.2.3.8-.5 1.6-1.2 1.9-1.2.6-2.9-.1-4.7-1.9-1.8-1.8-2.5-3.5-1.7-4.5Z" fill="#fff"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
